@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools Hub</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <style>
+        /* Custom animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+        /* Hover effects */
+        .tool-card, .about-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .tool-card:hover, .about-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Section styling */
+        .category-section, .about-section {
+            margin-bottom: 3rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen p-4">
+    <!-- Main content -->
+    <main class="w-full max-w-7xl">
+        <!-- Title Section -->
+        <section class="text-center mb-12">
+            <h1 class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600 animate-fadeIn">
+                AI Tools Hub
+            </h1>
+            <p class="text-lg text-gray-300 mt-4 animate-fadeIn" style="animation-delay: 0.2s;">
+                Discover the top 50 AI tools for video editing, photo editing, coding, studying, and news
+            </p>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <h2 class="text-3xl font-semibold mb-6 text-teal-400 animate-fadeIn">About AI Tools Hub</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="about-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 0.3s;">
+                    <img src="assets\placeholder.jpg" alt="Curator Profile" class="h-32 w-32 rounded-full mb-4 object-cover">
+                    <h3 class="text-xl font-semibold">Curated by varun</h3>
+                    <p class="text-gray-300 text-sm mt-4">
+                        AI Tools Hub is curated by a varun passionate about technology, showcasing the best AI tools to enhance creativity, productivity, and learning. Contact us at <a href="nvvarun4@gmail.com" class="text-blue-400 hover:underline">nvvarun4@gmail.com</a> for inquiries.
+                    </p>
+                </div>
+                <div class="about-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 0.4s;">
+                    <h3 class="text-xl font-semibold">Our Mission</h3>
+                    <p class="text-gray-300 text-sm mt-4">
+                        We aim to simplify access to powerful AI tools, empowering creators, developers, students, and professionals to achieve their goals with cutting-edge technology.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Editing Tools -->
+        <section class="category-section">
+            <h2 class="text-3xl font-semibold mb-6 text-blue-400 animate-fadeIn">Video Editing Tools</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <a href="https://www.adobe.com/products/premiere.html" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 0.5s;">
+                    <img src="assets\a.png" alt="Adobe Premiere Pro Logo" class="h-16 w-16 mb-4 object-contain">
+                    <h3 class="text-xl font-semibold">Adobe Premiere Pro</h3>
+                    <p class="text-gray-400 text-sm mt-2">AI-driven editing with auto-reframing and scene detection</p>
+                </a>
+                <a href="https://www.runwayml.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 0.6s;">
+                    <img src="assets/b.png" alt="Runway Logo" class="h-16 w-16 mb-4 object-contain">
+                    <h3 class="text-xl font-semibold">Runway</h3>
+                    <p class="text-gray-400 text-sm mt-2">AI video generation and editing with inpainting</p>
+                </a>
+                <a href="https://www.synthesia.io" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 0.7s;">
+                    <img src="assets/c.jpg" alt="Synthesia Logo" class="h-16 w-16 mb-4 object-contain">
+                    <h3 class="text-xl font-semibold">Synthesia</h3>
+                    <p class="text-gray-400 text-sm mt-2">Create videos with AI avatars and voices</p>
+                </a>
+                <a href="https://www.canva.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 0.8s;">
+                    <img src="assets/d.jpg" alt="Canva Logo" class="h-16 w-16 mb-4 object-contain">
+                    <h3 class="text-xl font-semibold">Canva</h3>
+                    <p class="text-gray-400 text-sm mt-2">AI-powered video editing with Magic Design</p>
+                </a>
+                <a href="https://www.veed.io" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 0.9s;">
+                    <img src="assets/e.jpg" alt="VEED Logo" class="h-16 w-16 mb-4 object-contain">
+                    <h3 class="text-xl font-semibold">VEED</h3>
+                    <p class="text-gray-400 text-sm mt-2">User-friendly AI video editor for social media</p>
+                </a>
+                <a href="https://www.flexclip.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 1.0s;">
+                    <img src="assets/f.png" alt="FlexClip Logo" class="h-16 w-16 mb-4 object-contain">
+                    <h3 class="text-xl font-semibold">FlexClip</h3>
+                    <p class="text-gray-400 text-sm mt-2">AI text-to-video and subtitle generation</p>
+                </a>
+                <a href="https://www.pictory.ai" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 1.1s;">
+                    <img src="assets/g.png" alt="Pictory Logo" class="h-16 w-16 mb-4 object-contain">
+                    <h3 class="text-xl font-semibold">Pictory</h3>
+                    <p class="text-gray-400 text-sm mt-2">Turn scripts or blogs into engaging videos</p>
+                </a>
+                <a href="https://www.descript.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 1.2s;">
+                    <img src="assets/h.png" alt="Descript Logo" class="h-16 w-16 mb-4 object-contain">
+                    <h3 class="text-xl font-semibold">Descript</h3>
+                    <p class="text-gray-400 text-sm mt-2">AI-powered video and audio editing with transcription</p>
+                </a>
+                <a href="https://www.invideo.io" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 1.3s;">
+                    <img src="assets/i.jpg" alt="InVideo Logo" class="h-16 w-16 mb-4 object-contain">
+                    <h3 class="text-xl font-semibold">InVideo</h3>
+                    <p class="text-gray-400 text-sm mt-2">AI text-to-video for social media content</p>
+                </a>
+                <a href="https://www.lumen5.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 1.4s;">
+                    <img src="assets/j.png" alt="Lumen5 Logo" class="h-16 w-16 mb-4 object-contain">
+                    <h3 class="text-xl font-semibold">Lumen5</h3>
+                    <p class="text-gray-400 text-sm mt-2">Beginner-friendly AI video editor for blog-to-video</p>
+                </a>
+            </section>
+
+            <!-- Photo Editing Tools -->
+            <section class="category-section">
+                <h2 class="text-3xl font-semibold mb-6 text-purple-400 animate-fadeIn">Photo Editing Tools</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <a href="https://www.canva.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 1.5s;">
+                        <img src="assets/k.jpg" alt="Canva Logo" class="h-16 w-16 mb-4 object-contain">
+                        <h3 class="text-xl font-semibold">Canva</h3>
+                        <p class="text-gray-400 text-sm mt-2">AI photo editing with Magic Edit and background removal</p>
+                    </a>
+                    <a href="https://www.picsart.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 1.6s;">
+                        <img src="assets/l.jpg" alt="Picsart Logo" class="h-16 w-16 mb-4 object-contain">
+                        <h3 class="text-xl font-semibold">Picsart</h3>
+                        <p class="text-gray-400 text-sm mt-2">AI-enhanced photo and video editing platform</p>
+                    </a>
+                    <a href="https://www.adobe.com/products/photoshop.html" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 1.7s;">
+                        <img src="assets/m.jpg" alt="Adobe Photoshop Logo" class="h-16 w-16 mb-4 object-contain">
+                        <h3 class="text-xl font-semibold">Adobe Photoshop</h3>
+                        <p class="text-gray-400 text-sm mt-2">AI-powered image editing with neural filters</p>
+                    </a>
+                    <a href="https://www.midjourney.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 1.8s;">
+                        <img src="assets/n.jpg" alt="MidJourney Logo" class="h-16 w-16 mb-4 object-contain">
+                        <h3 class="text-xl font-semibold">MidJourney</h3>
+                        <p class="text-gray-400 text-sm mt-2">AI image generation for creative visuals</p>
+                    </a>
+                    <a href="https://stablediffusion.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 1.9s;">
+                        <img src="assets/o.jpg" alt="Stable Diffusion Logo" class="h-16 w-16 mb-4 object-contain">
+                        <h3 class="text-xl font-semibold">Stable Diffusion</h3>
+                        <p class="text-gray-400 text-sm mt-2">Open-source AI for text-to-image generation</p>
+                    </a>
+                    <a href="https://www.fotor.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 2.0s;">
+                        <img src="assets/p.jpg" alt="Fotor Logo" class="h-16 w-16 mb-4 object-contain">
+                        <h3 class="text-xl font-semibold">Fotor</h3>
+                        <p class="text-gray-400 text-sm mt-2">AI photo editor for quick enhancements</p>
+                    </a>
+                    <a href="https://www.dalle3.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 2.1s;">
+                        <img src="assets/q.png" alt="DALL-E 3 Logo" class="h-16 w-16 mb-4 object-contain">
+                        <h3 class="text-xl font-semibold">DALL-E 3</h3>
+                        <p class="text-gray-400 text-sm mt-2">Advanced AI for generating creative images</p>
+                    </a>
+                    <a href="https://www.microsoft.com/designer" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 2.2s;">
+                        <img src="assets/r.jpg" alt="Microsoft Designer Logo" class="h-16 w-16 mb-4 object-contain">
+                        <h3 class="text-xl font-semibold">Microsoft Designer</h3>
+                        <p class="text-gray-400 text-sm mt-2">AI-driven design tool for images and graphics</p>
+                    </a>
+                    <a href="https://www.pixlr.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 2.3s;">
+                        <img src="assets/s.jpg" alt="Pixlr Logo" class="h-16 w-16 mb-4 object-contain">
+                        <h3 class="text-xl font-semibold">Pixlr</h3>
+                        <p class="text-gray-400 text-sm mt-2">Free AI photo editor with user-friendly interface</p>
+                    </a>
+                    <a href="https://luminarneo.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 2.4s;">
+                        <img src="assets/t.jpg" alt="Luminar Neo Logo" class="h-16 w-16 mb-4 object-contain">
+                        <h3 class="text-xl font-semibold">Luminar Neo</h3>
+                        <p class="text-gray-400 text-sm mt-2">Powerful AI editor for professional photo enhancements</p>
+                    </a>
+                </section>
+
+                <!-- Coding Tools -->
+                <section class="category-section">
+                    <h2 class="text-3xl font-semibold mb-6 text-green-400 animate-fadeIn">Coding Tools</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                        <a href="https://www.cursor.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 2.5s;">
+                            <img src="assets/u.jpg" alt="Cursor Logo" class="h-16 w-16 mb-4 object-contain">
+                            <h3 class="text-xl font-semibold">Cursor</h3>
+                            <p class="text-gray-400 text-sm mt-2">AI-powered code editor with autocomplete</p>
+                        </a>
+                        <a href="https://www.bubble.io" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 2.6s;">
+                            <img src="assets/v.png" alt="Bubble Logo" class="h-16 w-16 mb-4 object-contain">
+                            <h3 class="text-xl font-semibold">Bubble</h3>
+                            <p class="text-gray-400 text-sm mt-2">No-code platform for web applications</p>
+                        </a>
+                        <a href="https://www.bolt.new" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 2.7s;">
+                            <img src="assets/w.jpg" alt="Bolt.new Logo" class="h-16 w-16 mb-4 object-contain">
+                            <h3 class="text-xl font-semibold">Bolt.new</h3>
+                            <p class="text-gray-400 text-sm mt-2">AI-driven prototyping and app deployment</p>
+                        </a>
+                        <a href="https://github.com/features/copilot" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 2.8s;">
+                            <img src="assets/x.png" alt="GitHub Copilot Logo" class="h-16 w-16 mb-4 object-contain">
+                            <h3 class="text-xl font-semibold">GitHub Copilot</h3>
+                            <p class="text-gray-400 text-sm mt-2">AI code suggestions for developers</p>
+                        </a>
+                        <a href="https://www.replit.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 2.9s;">
+                            <img src="assets/y.png" alt="Replit Logo" class="h-16 w-16 mb-4 object-contain">
+                            <h3 class="text-xl font-semibold">Replit</h3>
+                            <p class="text-gray-400 text-sm mt-2">AI-assisted online coding environment</p>
+                        </a>
+                        <a href="https://www.coderpad.io" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 3.0s;">
+                            <img src="assets/z.png" alt="CoderPad Logo" class="h-16 w-16 mb-4 object-contain">
+                            <h3 class="text-xl font-semibold">CoderPad</h3>
+                            <p class="text-gray-400 text-sm mt-2">AI-enhanced coding interview platform</p>
+                        </a>
+                        <a href="https://www.tabnine.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 3.1s;">
+                            <img src="assets/aa.jpg" alt="Tabnine Logo" class="h-16 w-16 mb-4 object-contain">
+                            <h3 class="text-xl font-semibold">Tabnine</h3>
+                            <p class="text-gray-400 text-sm mt-2">AI code completion for multiple IDEs</p>
+                        </a>
+                        <a href="https://www.deepcode.ai " class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 3.2s;">
+                            <img src="assets/bb.png" alt="DeepCode Logo" class="h-16 w-16 mb-4 object-contain">
+                            <h3 class="text-xl font-semibold">DeepCode</h3>
+                            <p class="text-gray-400 text-sm mt-2">AI-powered code review and bug detection</p>
+                        </a>
+                        <a href="https://codeium.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 3.3s;">
+                            <img src="assets/cc.png" alt="Codeium Logo" class="h-16 w-16 mb-4 object-contain">
+                            <h3 class="text-xl font-semibold">Codeium</h3>
+                            <p class="text-gray-400 text-sm mt-2">AI-driven code suggestions and autocompletion</p>
+                        </a>
+                        <a href="https://www.figma.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 3.4s;">
+                            <img src="assets/dd.png" alt="Figma Logo" class="h-16 w-16 mb-4 object-contain">
+                            <h3 class="text-xl font-semibold">Figma Make</h3>
+                            <p class="text-gray-400 text-sm mt-2">AI-powered vibe-coding for web design</p>
+                        </a>
+                    </section>
+
+                    <!-- Studying Tools -->
+                    <section class="category-section">
+                        <h2 class="text-3xl font-semibold mb-6 text-yellow-400 animate-fadeIn">Studying Tools</h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                            <a href="https://www.quizlet.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 3.5s;">
+                                <img src="assets/ee.png" alt="Quizlet Logo" class="h-16 w-16 mb-4 object-contain">
+                                <h3 class="text-xl font-semibold">Quizlet</h3>
+                                <p class="text-gray-400 text-sm mt-2">AI-powered flashcards and study tools</p>
+                            </a>
+                            <a href="https://www.khanacademy.org" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 3.6s;">
+                                <img src="assets/ff.png" alt="Khan Academy Logo" class="h-16 w-16 mb-4 object-contain">
+                                <h3 class="text-xl font-semibold">Khan Academy</h3>
+                                <p class="text-gray-400 text-sm mt-2">AI-driven personalized learning paths</p>
+                            </a>
+                            <a href="https://www.grammarly.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 3.7s;">
+                                <img src="assets/gg.png" alt="Grammarly Logo" class="h-16 w-16 mb-4 object-contain">
+                                <h3 class="text-xl font-semibold">Grammarly</h3>
+                                <p class="text-gray-400 text-sm mt-2">AI writing assistant for essays and notes</p>
+                            </a>
+                            <a href="https://www.wolframalpha.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 3.8s;">
+                                <img src="assets/hh.jpg" alt="Wolfram Alpha Logo" class="h-16 w-16 mb-4 object-contain">
+                                <h3 class="text-xl font-semibold">Wolfram Alpha</h3>
+                                <p class="text-gray-400 text-sm mt-2">AI computational knowledge engine</p>
+                            </a>
+                            <a href="https://www.notion.so" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 3.9s;">
+                                <img src="assets/ii.png" alt="Notion Logo" class="h-16 w-16 mb-4 object-contain">
+                                <h3 class="text-xl font-semibold">Notion AI</h3>
+                                <p class="text-gray-400 text-sm mt-2">AI-enhanced note-taking and organization</p>
+                            </a>
+                            <a href="https://www.chegg.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 4.0s;">
+                                <img src="assets/jj.png" alt="Chegg Logo" class="h-16 w-16 mb-4 object-contain">
+                                <h3 class="text-xl font-semibold">Chegg</h3>
+                                <p class="text-gray-400 text-sm mt-2">AI-driven homework help and tutoring</p>
+                            </a>
+                            <a href="https://www.duolingo.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 4.1s;">
+                                <img src="assets/ll.png" alt="Duolingo Logo" class="h-16 w-16 mb-4 object-contain">
+                                <h3 class="text-xl font-semibold">Duolingo</h3>
+                                <p class="text-gray-400 text-sm mt-2">AI-powered language learning platform</p>
+                            </a>
+                            <a href="https://www.coursera.org" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 4.2s;">
+                                <img src="assets/mm.png" alt="Coursera Logo" class="h-16 w-16 mb-4 object-contain">
+                                <h3 class="text-xl font-semibold">Coursera</h3>
+                                <p class="text-gray-400 text-sm mt-2">AI-recommended courses and learning paths</p>
+                            </a>
+                            <a href="https://www.memrise.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 4.3s;">
+                                <img src="assets/nn.png" alt="Memrise Logo" class="h-16 w-16 mb-4 object-contain">
+                                <h3 class="text-xl font-semibold">Memrise</h3>
+                                <p class="text-gray-400 text-sm mt-2">AI-driven language and vocabulary learning</p>
+                            </a>
+                            <a href="https://www.ankiapp.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 4.4s;">
+                                <img src="assets/oo.jpg" alt="Anki Logo" class="h-16 w-16 mb-4 object-contain">
+                                <h3 class="text-xl font-semibold">Anki</h3>
+                                <p class="text-gray-400 text-sm mt-2">AI-enhanced flashcard app for memorization</p>
+                            </a>
+                        </section>
+
+                        <!-- News Tools -->
+                        <section class="category-section">
+                            <h2 class="text-3xl font-semibold mb-6 text-red-400 animate-fadeIn">News Tools</h2>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                                <a href="https://www.grok.ai" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 4.5s;">
+                                    <img src="assets/ss.png" alt="Grok Logo" class="h-16 w-16 mb-4 object-contain">
+                                    <h3 class="text-xl font-semibold">Grok</h3>
+                                    <p class="text-gray-400 text-sm mt-2">AI assistant for news and information queries</p>
+                                </a>
+                                <a href="https://www.perplexity.ai" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 4.6s;">
+                                    <img src="assets/tt.jpg" alt="Perplexity AI Logo" class="h-16 w-16 mb-4 object-contain">
+                                    <h3 class="text-xl font-semibold">Perplexity AI</h3>
+                                    <p class="text-gray-400 text-sm mt-2">AI-powered search for news and research</p>
+                                </a>
+                                <a href="https://www.artifact.news" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 4.7s;">
+                                    <img src="assets/uu.png" alt="Artifact Logo" class="h-16 w-16 mb-4 object-contain">
+                                    <h3 class="text-xl font-semibold">Artifact</h3>
+                                    <p class="text-gray-400 text-sm mt-2">AI-curated personalized news feed</p>
+                                </a>
+                                <a href="https://www.newsbreak.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 4.8s;">
+                                    <img src="assets/vv.jpg" alt="NewsBreak Logo" class="h-16 w-16 mb-4 object-contain">
+                                    <h3 class="text-xl font-semibold">NewsBreak</h3>
+                                    <p class="text-gray-400 text-sm mt-2">AI-driven local and breaking news</p>
+                                </a>
+                                <a href="https://www.ground.news" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 4.9s;">
+                                    <img src="assets/zz.png" alt="Ground News Logo" class="h-16 w-16 mb-4 object-contain">
+                                    <h3 class="text-xl font-semibold">Ground News</h3>
+                                    <p class="text-gray-400 text-sm mt-2">AI-analyzed news with bias insights</p>
+                                </a>
+                                <a href="https://www.flipboard.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 5.0s;">
+                                    <img src="assets/yy.jpg" alt="Flipboard Logo" class="h-16 w-16 mb-4 object-contain">
+                                    <h3 class="text-xl font-semibold">Flipboard</h3>
+                                    <p class="text-gray-400 text-sm mt-2">AI-curated news and magazine platform</p>
+                                </a>
+                                <a href="https://www.smartnews.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 5.1s;">
+                                    <img src="assets/xx.jpg" alt="SmartNews Logo" class="h-16 w-16 mb-4 object-contain">
+                                    <h3 class="text-xl font-semibold">SmartNews</h3>
+                                    <p class="text-gray-400 text-sm mt-2">AI-driven news aggregation app</p>
+                                </a>
+                                <a href="https://www.feedly.com" class="tool-card bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center animate-fadeIn" style="animation-delay: 5.2s;">
+                                    <img src="assets/qq.png" alt="Feedly Logo" class="h-16 w-16 mb-4 object-contain">
+                                    <h3 class="text-xl font-semibold">Feedly</h3>
+                                    <p class="text-gray-400 text-sm mt-2">AI-powered RSS feed and news reader</p>
+                                </a>
+                               
+                                  
+                            </section>
+                        </main>
+
+                        <!-- Footer -->
+                        <footer class="mt-12 text-center text-gray-400">
+                            <p>© 2025 AI Tools Hub. All rights reserved.</p>
+                        </footer>
+
+                        <!-- JavaScript for interactivity -->
+                        <script>
+                            // Scroll-based animation trigger
+                            const cards = document.querySelectorAll('.tool-card, .about-card');
+                            const observer = new IntersectionObserver((entries) => {
+                                entries.forEach(entry => {
+                                    if (entry.isIntersecting) {
+                                        entry.target.classList.add('animate-fadeIn');
+                                        observer.unobserve(entry.target);
+                                    }
+                                });
+                            }, { threshold: 0.1 });
+
+                            cards.forEach(card => observer.observe(card));
+                        </script>
+                    </body>
+                </html>

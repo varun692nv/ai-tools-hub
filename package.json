@@ -1,0 +1,11 @@
+{
+  "name": "ai-tools-hub",
+  "version": "1.0.0",
+  "description": "Website showcasing 50 AI tools for video, photo, coding, studying, and news",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./public/dist/output.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
